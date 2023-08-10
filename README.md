@@ -23,8 +23,11 @@ Here's a quick guide to get started with the `fakeopenai` package:
 
 ```python
 import fakeopenai
+import os
 
-fakeopenai.set_api_key("YOUR_FAKEOPENAI_API_KEY")
+FAKEOPENAI_KEY = os.environ.get("FAKEOPENAI_KEY")
+
+fakeopenai.set_api_key(FAKEOPENAI_KEY)
 ```
 
 2. **Generate a response**:
