@@ -60,3 +60,10 @@ This package is licensed under the MIT License.
 ---
 
 Feel free to modify or expand upon this README to better fit your needs or to add any other relevant information about the package.
+
+
+## Note:
+
+https://github.com/pengzhile/pandora/blob/master/doc/HTTP-API.md
+https://github.com/pengzhile/pandora/blob/7aff316c9b4bbc75dc15983a75bef75336b8d0d9/src/pandora/openai/api.py#L314
+https://github.com/pengzhile/pandora/issues/837
