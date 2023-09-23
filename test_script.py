@@ -1,11 +1,11 @@
-import fakeopenai
 import os
+import fakeopenai as openai
 
-FAKEOPENAI_KEY = os.environ.get("FAKEOPENAI_KEY")
+# Set API key
+openai.api_key = os.environ.get("FAKEOPENAI_KEY")
 
-fakeopenai.set_api_key(FAKEOPENAI_KEY)
-
-response = fakeopenai.ChatCompletion_create(
+# Usage
+response = FakeOpenAI.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
