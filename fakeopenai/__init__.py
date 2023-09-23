@@ -1,1 +1,1 @@
-from .api import FakeOpenAI as openai
+from .api import ChatCompletion, api_key

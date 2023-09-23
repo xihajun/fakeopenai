@@ -2,10 +2,10 @@ import os
 import fakeopenai as openai
 
 # Set API key
-openai.api_key = os.environ.get("FAKEOPENAI_KEY")
+openai.api_key = "pk-this-is-a-real-free-pool-token-for-everyone"
 
 # Usage
-response = FakeOpenAI.ChatCompletion.create(
+response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
     messages=[
         {"role": "system", "content": "You are a helpful assistant."},
@@ -13,5 +13,5 @@ response = FakeOpenAI.ChatCompletion.create(
     ]
 )
 
-assistant_reply = response['choices'][0]['message']['content']
+assistant_reply = response['choices'][0]['message']
 print("Assistant:", assistant_reply)
